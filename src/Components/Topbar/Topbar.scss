@@ -2,9 +2,30 @@
 
 .topbar{
     width: 100%;
-    background:$mainColor;
+    background:white;
+    color:$mainColor;
     height: 70px;
     position: fixed;
     top: 0;
     z-index: 2;
+
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+
+           .logo{
+
+               text-decoration: none;
+               font-size: 40px;
+               font-weight: 700;
+               color: black;
+           } 
+
+        }
+
+    }
 }

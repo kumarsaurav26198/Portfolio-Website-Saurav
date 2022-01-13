@@ -5,6 +5,7 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Topbar from "./Components/Topbar/Topbar";
 import Work from "./Components/Work/Work";
 import "./App.scss";
+// import { FaBeer } from "react-icons/fa";
 
 function App() {
   return (

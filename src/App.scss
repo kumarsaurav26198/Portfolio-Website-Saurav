@@ -8,6 +8,7 @@
         background: lightsalmon;
         position: relative;
         top: 70px;
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none; // onlu for fire fox
         &::-webkit-scrollbar{
