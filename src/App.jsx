@@ -5,12 +5,16 @@ import Testimonials from "./Components/Testimonials/Testimonials";
 import Topbar from "./Components/Topbar/Topbar";
 import Work from "./Components/Work/Work";
 import "./App.scss";
-// import { FaBeer } from "react-icons/fa";
+import React, { useState } from 'react';
+import Menu from "./Components/Menu/Menu";
+
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div className="app">
-      <Topbar />
+      <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <div className="sections">
         <Intro />
         <Portfolio />

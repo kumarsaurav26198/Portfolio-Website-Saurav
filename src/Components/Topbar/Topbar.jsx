@@ -1,34 +1,34 @@
-import { Email } from '@material-ui/icons';
 import React from 'react';
-import Person from '../Icons/Person';
 import "./Topbar.scss";
+import { BsTelephoneForwardFill } from "react-icons/bs";
+import { BiEnvelope } from "react-icons/bi";
 
-
-function Topbar() {
+function Topbar({ menuOpen, setMenuOpen }) {
     return (
-        <div className='topbar' id='topbar'>
+        <div className={"topbar " + (menuOpen && "active")} id='topbar'>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className='logo'>genius.</a>
+                    <a href="#intro" className='logo'>Saurav</a>
+                    <div className="contact1">
+                        <span><BsTelephoneForwardFill /></span>&nbsp;&nbsp;&nbsp;
+                        <b>+91 620 2142 166</b>
+                    </div>
+                    <div className="itemContainer">
+                        <div className="email">
+                            <BiEnvelope />&nbsp;&nbsp;&nbsp;
+                            <b><span>kumarsaurav26198@gmail.com</span></b>
+                        </div>
+                    </div>
                 </div>
-                <div className="itemContainer">
-                    {/* <Person /> */}
-                    <img src="/Image/logo.png" alt="logo" style={{ height: "44px", border: "1px solid black" }} />
-                </div>
-                <span>+91 620 2142 166</span>
-                <div className="itemContainer">
-                    <b>
-                        <Email></Email>
-                    </b>
-                    <span>magnetsurav77@gmail.com</span>
-                </div>
-                <div className="hambargur">
+                <div className="right">
+                    <div className="hambarger" onClick={() => setMenuOpen(!menuOpen)}>
+                        <span className="line1"></span>
+                        <span className="line2"></span>
+                        <span className="line3"></span>
 
+                    </div>
                 </div>
-
-
             </div>
-
         </div>
     );
 };
