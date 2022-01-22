@@ -8,7 +8,6 @@ import "./App.scss";
 import React, { useState } from 'react';
 import Menu from "./Components/Menu/Menu";
 
-
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
