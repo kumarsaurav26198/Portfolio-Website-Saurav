@@ -1,0 +1,123 @@
+.body{
+    height: 100vh;
+    width: 100vw;
+     background-color: #fff;
+     overflow: hidden;
+     
+    .topbar{
+    display: flex;
+    color: rgb(218, 34, 126);
+    align-items: center;
+    margin: 13px 30px;
+
+
+    .components{
+        margin-left: 75px;
+
+        ul{
+            display: flex;
+            color: yellow;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                margin-left: 90px;
+                color: rgb(218, 34, 126);
+
+            }
+        }
+    }
+}
+
+.container{
+    margin: 30px 80px;
+    h2{
+        text-decoration: underline rgb(218, 34, 126);
+    }
+    form{
+        margin-top: 40px;
+        input{
+            width: 80%;
+            text-align: left;
+            
+            height: 40px;
+            border-radius: 5px;
+            margin-top: 25px;
+          
+        }
+        .footer{
+            display: flex;
+            width: 82%;
+            margin-top: 17px;
+            
+
+            
+            .left{
+                width: 50%;
+                height: 50%;
+                padding:22px 5px 0px 0px;
+
+
+                select{
+                    width: 100%;
+                    height: 35px;
+                }
+                input{
+                     width: 99%;
+                    height: 35px;
+                }
+            
+                
+            }
+            .right{
+                width: 50%;
+                height: 50%;
+            padding: 23px 0px 0px 15px;
+
+                 select{
+                    width: 99%;
+                    height: 35px;
+                }
+                input{
+                     width: 98%;
+                    height: 35px;
+                }
+            }
+        }
+        
+    }
+
+
+}
+}
+.button{
+    width: 700px;
+    
+padding: 25px ;
+margin-left: 220px;
+.btn{
+            display: flex;
+            justify-content: center;
+            // justify-content: center;
+            align-items: center;
+            width: 20%;
+            height: 40px;
+            // padding: 30px 50px 0px 350px;
+            // margin: 20px 0px 0px ;
+            color: white;
+            border-color: rgb(218, 34, 126);
+            background-color: rgb(218, 34, 126);
+
+
+}
+
+        }
+.page{
+    display: flex;
+    align-items: center;
+    justify-content:last baseline;
+    img{
+        width: 500px;
+        height: 300px;
+        padding-right:40px ;
+    }
+}
